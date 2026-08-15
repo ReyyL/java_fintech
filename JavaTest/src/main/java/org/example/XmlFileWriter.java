@@ -10,13 +10,8 @@ import java.nio.file.Path;
 public class XmlFileWriter {
     private static final Logger logger = LoggerFactory.getLogger(XmlFileWriter.class);
 
-    private final Path directory;
-
-    public XmlFileWriter(Path directory) {
-        this.directory = directory;
-    }
-
     public void save(String xml, String fileName) {
+        var directory = Path.of("output");
         Path path = directory.resolve(fileName + ".xml");
 
         try {

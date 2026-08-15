@@ -3,7 +3,6 @@ package org.example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.nio.file.Path;
 import java.util.List;
 
 public class Main {
@@ -13,7 +12,7 @@ public class Main {
     static void main() {
         var loader = new CityJsonLoader();
         var xmlConverter = new CityXmlConverter();
-        var xmlWriter = new XmlFileWriter(Path.of("output"));
+        var xmlWriter = new XmlFileWriter();
 
         for (String name : CITY_NAMES) {
             processCity(name, loader, xmlConverter, xmlWriter);
