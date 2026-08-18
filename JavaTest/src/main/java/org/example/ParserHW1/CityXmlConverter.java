@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ParserHW1;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.slf4j.Logger;
