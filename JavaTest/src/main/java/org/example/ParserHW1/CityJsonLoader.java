@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ParserHW1;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
@@ -13,12 +13,6 @@ import java.io.InputStream;
 class Coords {
     private Double lat;
     private Double lon;
-}
-
-@Data
-class City {
-    private String slug;
-    private Coords coords;
 }
 
 public class CityJsonLoader {
